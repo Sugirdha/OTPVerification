@@ -54,7 +54,7 @@ extension MainViewController {
         btnConfig.imagePlacement = .trailing
         nextButton.configuration = btnConfig
         nextButton.setTitleColor(.white, for: .normal)
-        nextButton.backgroundColor = UIColor(named: Constants.primaryColorString)
+        nextButton.backgroundColor = UIColor(named: Colors.primary.rawValue)
         nextButton.layer.cornerRadius = 4
         nextButton.setImage(UIImage(systemName: "arrow.right"), for: .normal)
         nextButton.tintColor = .white
