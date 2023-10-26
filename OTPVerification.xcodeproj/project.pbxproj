@@ -12,6 +12,8 @@
 		5A7AB3242AE95F6D004DAA98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A7AB3232AE95F6D004DAA98 /* Assets.xcassets */; };
 		5A7AB3272AE95F6D004DAA98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7AB3252AE95F6D004DAA98 /* LaunchScreen.storyboard */; };
 		5A7AB34B2AE966E1004DAA98 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AB34A2AE966E1004DAA98 /* Constants.swift */; };
+		5A7AB34D2AEA0EB7004DAA98 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AB34C2AEA0EB7004DAA98 /* OTPViewController.swift */; };
+		5A7AB34F2AEA18E1004DAA98 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AB34E2AEA18E1004DAA98 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5A7AB3262AE95F6D004DAA98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A7AB3282AE95F6D004DAA98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A7AB34A2AE966E1004DAA98 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5A7AB34C2AEA0EB7004DAA98 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		5A7AB34E2AEA18E1004DAA98 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 			children = (
 				5A7AB31A2AE95F6B004DAA98 /* AppDelegate.swift */,
 				5A7AB31E2AE95F6B004DAA98 /* MainViewController.swift */,
+				5A7AB34C2AEA0EB7004DAA98 /* OTPViewController.swift */,
 				5A7AB34A2AE966E1004DAA98 /* Constants.swift */,
+				5A7AB34E2AEA18E1004DAA98 /* Utils.swift */,
 				5A7AB3232AE95F6D004DAA98 /* Assets.xcassets */,
 				5A7AB3252AE95F6D004DAA98 /* LaunchScreen.storyboard */,
 				5A7AB3282AE95F6D004DAA98 /* Info.plist */,
@@ -134,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7AB34F2AEA18E1004DAA98 /* Utils.swift in Sources */,
+				5A7AB34D2AEA0EB7004DAA98 /* OTPViewController.swift in Sources */,
 				5A7AB31F2AE95F6B004DAA98 /* MainViewController.swift in Sources */,
 				5A7AB31B2AE95F6B004DAA98 /* AppDelegate.swift in Sources */,
 				5A7AB34B2AE966E1004DAA98 /* Constants.swift in Sources */,

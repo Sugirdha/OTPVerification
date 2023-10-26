@@ -22,6 +22,17 @@ class MainViewController: UIViewController {
         setup()
     }
     
+    @objc func nextButtonTapped() {
+        let nextVc = OTPViewController()
+                nextVc.emailString = emailTextField.text ?? "example@abc.com"
+                navigationController?.pushViewController(nextVc, animated: true)
+    }
+
+}
+
+// MARK: - Setup and Layout
+extension MainViewController {
+    
     private func setup() {
         /// style
         titleLabel.text = "Enter your email address"
@@ -37,6 +48,7 @@ class MainViewController: UIViewController {
         
         let btnText = NSAttributedString(string: "Continue".uppercased(), attributes: [.font: UIFont.systemFont(ofSize: 18)])
         nextButton.setAttributedTitle(btnText, for: .normal)
+        nextButton.isEnabled = false
         var btnConfig = UIButton.Configuration.plain()
         btnConfig.imagePadding = 16
         btnConfig.imagePlacement = .trailing
@@ -51,6 +63,7 @@ class MainViewController: UIViewController {
         stackView.spacing = 60
 
         /// functionality
+        emailTextField.delegate = self
         nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .primaryActionTriggered)
         
         /// layout
@@ -68,15 +81,20 @@ class MainViewController: UIViewController {
 
             stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 80),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 20),
+            view.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: 20),
         ])
     }
     
-    @objc func nextButtonTapped() {
-        // ToDo
-    }
-
-
-
 }
 
+// MARK: - TextField Delegate
+extension MainViewController: UITextFieldDelegate {
+
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        if textField.text != nil {
+            nextButton.isEnabled = textField.didEnterValidEmail()
+        }
+
+    }
+    
+}
