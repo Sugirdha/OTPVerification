@@ -1,5 +1,5 @@
 //
-//  OTPViewController.swift
+//  BaseViewController.swift
 //  OTPVerification
 //
 //  Created by Sugirdha Vaithyanathan on 26/10/23.
@@ -68,7 +68,6 @@ extension BaseViewController {
 
         NSLayoutConstraint.activate([
             topView.heightAnchor.constraint(equalToConstant: 64),            
-            contentView.heightAnchor.constraint(equalToConstant: 80),
             
             stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 80),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),

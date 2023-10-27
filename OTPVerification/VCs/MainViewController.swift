@@ -50,6 +50,7 @@ extension MainViewController {
 
         NSLayoutConstraint.activate([
             contentView.topAnchor.constraint(equalTo: emailTextField.topAnchor),
+            contentView.bottomAnchor.constraint(equalTo: emailTextField.bottomAnchor),
             contentView.leadingAnchor.constraint(equalTo: emailTextField.leadingAnchor),
             contentView.trailingAnchor.constraint(equalTo: emailTextField.trailingAnchor),
         ])

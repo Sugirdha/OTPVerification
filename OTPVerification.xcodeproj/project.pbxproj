@@ -12,9 +12,11 @@
 		5A7AB3242AE95F6D004DAA98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A7AB3232AE95F6D004DAA98 /* Assets.xcassets */; };
 		5A7AB3272AE95F6D004DAA98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7AB3252AE95F6D004DAA98 /* LaunchScreen.storyboard */; };
 		5A7AB34B2AE966E1004DAA98 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AB34A2AE966E1004DAA98 /* Constants.swift */; };
-		5A7AB34D2AEA0EB7004DAA98 /* OtpBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AB34C2AEA0EB7004DAA98 /* OtpBaseViewController.swift */; };
+		5A7AB34D2AEA0EB7004DAA98 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AB34C2AEA0EB7004DAA98 /* BaseViewController.swift */; };
 		5A7AB34F2AEA18E1004DAA98 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AB34E2AEA18E1004DAA98 /* Utils.swift */; };
 		5A7AB3512AEA52E8004DAA98 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AB3502AEA52E8004DAA98 /* OTPViewController.swift */; };
+		5A7AB3532AEA69A3004DAA98 /* OTPInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AB3522AEA69A3004DAA98 /* OTPInputView.swift */; };
+		5A7AB3552AEA6AE0004DAA98 /* OTPTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AB3542AEA6AE0004DAA98 /* OTPTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +27,11 @@
 		5A7AB3262AE95F6D004DAA98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A7AB3282AE95F6D004DAA98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A7AB34A2AE966E1004DAA98 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		5A7AB34C2AEA0EB7004DAA98 /* OtpBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpBaseViewController.swift; sourceTree = "<group>"; };
+		5A7AB34C2AEA0EB7004DAA98 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5A7AB34E2AEA18E1004DAA98 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5A7AB3502AEA52E8004DAA98 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		5A7AB3522AEA69A3004DAA98 /* OTPInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPInputView.swift; sourceTree = "<group>"; };
+		5A7AB3542AEA6AE0004DAA98 /* OTPTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +64,51 @@
 		5A7AB3192AE95F6B004DAA98 /* OTPVerification */ = {
 			isa = PBXGroup;
 			children = (
-				5A7AB31A2AE95F6B004DAA98 /* AppDelegate.swift */,
-				5A7AB31E2AE95F6B004DAA98 /* MainViewController.swift */,
-				5A7AB3502AEA52E8004DAA98 /* OTPViewController.swift */,
-				5A7AB34C2AEA0EB7004DAA98 /* OtpBaseViewController.swift */,
-				5A7AB34A2AE966E1004DAA98 /* Constants.swift */,
-				5A7AB34E2AEA18E1004DAA98 /* Utils.swift */,
-				5A7AB3232AE95F6D004DAA98 /* Assets.xcassets */,
-				5A7AB3252AE95F6D004DAA98 /* LaunchScreen.storyboard */,
+				5A7AB3592AEB7976004DAA98 /* ProjectFiles */,
+				5A7AB3562AEB794A004DAA98 /* VCs */,
+				5A7AB3572AEB7952004DAA98 /* Views */,
+				5A7AB3582AEB7965004DAA98 /* Utils */,
 				5A7AB3282AE95F6D004DAA98 /* Info.plist */,
 			);
 			path = OTPVerification;
+			sourceTree = "<group>";
+		};
+		5A7AB3562AEB794A004DAA98 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				5A7AB31E2AE95F6B004DAA98 /* MainViewController.swift */,
+				5A7AB3502AEA52E8004DAA98 /* OTPViewController.swift */,
+				5A7AB34C2AEA0EB7004DAA98 /* BaseViewController.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		5A7AB3572AEB7952004DAA98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A7AB3522AEA69A3004DAA98 /* OTPInputView.swift */,
+				5A7AB3542AEA6AE0004DAA98 /* OTPTextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A7AB3582AEB7965004DAA98 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5A7AB34A2AE966E1004DAA98 /* Constants.swift */,
+				5A7AB34E2AEA18E1004DAA98 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5A7AB3592AEB7976004DAA98 /* ProjectFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5A7AB31A2AE95F6B004DAA98 /* AppDelegate.swift */,
+				5A7AB3232AE95F6D004DAA98 /* Assets.xcassets */,
+				5A7AB3252AE95F6D004DAA98 /* LaunchScreen.storyboard */,
+			);
+			path = ProjectFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7AB3532AEA69A3004DAA98 /* OTPInputView.swift in Sources */,
+				5A7AB3552AEA6AE0004DAA98 /* OTPTextView.swift in Sources */,
 				5A7AB3512AEA52E8004DAA98 /* OTPViewController.swift in Sources */,
 				5A7AB34F2AEA18E1004DAA98 /* Utils.swift in Sources */,
-				5A7AB34D2AEA0EB7004DAA98 /* OtpBaseViewController.swift in Sources */,
+				5A7AB34D2AEA0EB7004DAA98 /* BaseViewController.swift in Sources */,
 				5A7AB31F2AE95F6B004DAA98 /* MainViewController.swift in Sources */,
 				5A7AB31B2AE95F6B004DAA98 /* AppDelegate.swift in Sources */,
 				5A7AB34B2AE966E1004DAA98 /* Constants.swift in Sources */,

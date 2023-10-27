@@ -30,6 +30,8 @@ enum Icons {
 
 struct Constants {
     
-    
-    
+    static let otpDigitsNum: Int = 6
+    static let bottomLineWidth = CGFloat(40)
+    static let bottomLineHeight = CGFloat(2)
+
 }

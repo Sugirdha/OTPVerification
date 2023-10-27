@@ -10,6 +10,8 @@ import UIKit
 class OTPViewController: BaseViewController {
 
     var emailString: String?
+    
+    let otpInputView = OTPInputView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +39,18 @@ extension OTPViewController {
         nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .primaryActionTriggered)
 
         /// layout
-        stackView.setCustomSpacing(60, after: imageView)
+        stackView.spacing = 60
+        stackView.setCustomSpacing(10, after: titleLabel)
         imageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
-
+        
+        otpInputView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(otpInputView)
+        NSLayoutConstraint.activate([
+            otpInputView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            otpInputView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            otpInputView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            otpInputView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+        ])
     }
 
 }
